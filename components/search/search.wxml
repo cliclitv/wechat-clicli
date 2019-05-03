@@ -1,0 +1,11 @@
+<view class="search">
+  <view class="search-header">
+    <image 
+      class="search-header-icon" 
+      src="../../image/i_search.png"></image>
+    <input 
+      class="search-header-input" 
+      bindinput="bindReplaceInput" 
+      placeholder="搜索" />
+  </view>
+</view>

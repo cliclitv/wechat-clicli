@@ -1,0 +1,18 @@
+.search {
+  width: 100%; position: fixed; top: 0;
+}
+.search .search-header {
+  width: 90%; background:#f8f8f9;
+  margin: 0 auto; padding: 5rpx 0;
+  display: flex; flex-direction: row; align-items: center;
+  border-radius: 25rpx;
+}
+.search-header .search-header-icon {
+  width: 32rpx; height: 32rpx;
+  background: #fafafa; 
+  margin-left: 20rpx;
+}
+.search-header .search-header-input {
+  width: 80%; background: #f8f8f9;
+  font-size: 28rpx; padding-left: 10rpx;
+}

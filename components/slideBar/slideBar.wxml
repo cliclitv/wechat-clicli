@@ -1,0 +1,39 @@
+<view class="slide-bar">
+  <!-- 标题列表-->
+  <scroll-view scroll-x class="slide-bar-scroll">
+    <view 
+      class="slide-bar-scroll-item" 
+      wx:for="{{tabList}}" 
+      wx:key="{{item.id}}">
+      <view
+        class="{{currentTab == item.id ? 'on' : ''}}" 
+        bindtap="handleSelectTab" 
+        data-current="{{item.id}}">{{item.title}}</view>
+    </view>
+  </scroll-view>
+  <!--内容列表-->
+  <!-- 
+  <slot>
+  </slot>
+  -->
+  <view class="sideItem">
+    <swiper
+      class="swiper"
+      indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}"
+      current="{{currentTab}}"
+      interval="{{interval}}"
+      bindchange="handleSelectContent"
+      duration="{{duration}}">
+      <swiper-item class="swiper-item" wx:for="{{7}}">
+        <view 
+          class="swiper-item-content"
+          wx:for="{{contentList}}"
+          wx:key="{{item.id}}">
+          <image class="swiper-item-content-img" src="{{item.src}}"></image>
+          <text class="swiper-item-content-title">{{item.name}}</text>
+        </view>
+      </swiper-item>
+    </swiper>  
+  </view>
+</view>
