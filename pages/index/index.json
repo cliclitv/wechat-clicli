@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "searchBar": "../../components/search/search",
-    "slideBar": "../../components/slideBar/slideBar"
+    "slideBar": "../../components/slideBar/slideBar",
+    "list": "../../components/list/list"
   }
 }

@@ -3,6 +3,8 @@ Component({
   properties: {
   },
   data: {
+    page: 1,
+    pageSize: 8,
     tabList: [
       {
         id: 0,
@@ -33,7 +35,7 @@ Component({
         title: '周日'
       }
     ],
-    currentTab: 0,
+    currentTab: 0, // 当前选中项
     contentList: [
       {
         id: 0,
@@ -84,7 +86,7 @@ Component({
     indicatorDots: false,
     autoplay: false,
     interval: 5000,
-    duration: 1000    
+    duration: 1000
   },
   methods: {
     handleSelectTab (e) {
@@ -98,4 +100,19 @@ Component({
       })
     }
   },
+  onShow () {
+    console.log('执行')
+    apiGetWeekUpdate({
+      status: "public",
+      tag: "推荐",
+      page: this.data.page,
+      pageSize: this.data.pageSize,
+    })
+    .then(res => {
+      console.log('获取每周更新：ok')
+    })
+    .catch(err => {
+      console.log('获取每周更新：fail')
+    })
+  }
 });

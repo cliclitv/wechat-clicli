@@ -1,0 +1,10 @@
+<view class="list">
+  <view class="list-title">推荐</view>
+  <view class="list-content">
+    <view class="list-content-item" wx:for="{{4}}" wx:key="index">
+      <image class="list-content-item-img"></image>
+      <text class="list-content-item-date">2013-32-32</text>
+      <text class="list-content-item-tit">这是标题</text>
+    </view>
+  </view>
+</view>

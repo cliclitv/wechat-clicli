@@ -1,5 +1,6 @@
 .search {
   width: 100%; position: fixed; top: 0;
+  background: #fff; z-index: 200;
 }
 .search .search-header {
   width: 90%; background:#f8f8f9;

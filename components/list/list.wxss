@@ -1,0 +1,29 @@
+.list {
+
+}
+.list .list-title {
+  font-size: 30rpx; font-weight: 600;
+  padding-left: 20rpx;
+}
+.list .list-content {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto;
+  justify-items: center;
+  padding: 20rpx;
+}
+.list-content .list-content-item {
+  display: flex; flex-direction: column; 
+  text-align: center;
+  padding-top: 20rpx;
+}
+.list-content-item .list-content-item-img {
+  width: 220rpx; height: 300rpx; 
+  background: #f8f8f9
+}
+.list-content-item .list-content-item-date {
+  font-size: 26rpx; color: #515a6e;
+}
+.list-content-item .list-content-item-tit {
+  font-size: 28rpx; font-weight: 600;
+}

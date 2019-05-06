@@ -1,12 +1,12 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+import { apiGetWeekUpdate } from '../../api/index'
 Page({
   data: {
     motto: 'Hello clicli',
   },
-  onLoad: function () {
+  onLoad () {
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -34,4 +34,19 @@ Page({
       })
     }
   },
+  onShow () {
+    console.log('执行')
+    apiGetWeekUpdate({
+      status: "public",
+      tag: "推荐",
+      page: 1,
+      pageSize: 8,
+    })
+    .then(res => {
+      console.log('获取每周更新：ok')
+    })
+    .catch(err => {
+      console.log('获取每周更新：fail')
+    })
+  }
 })

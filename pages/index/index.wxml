@@ -2,4 +2,5 @@
 <view class="index">
   <searchBar></searchBar>
   <slideBar></slideBar>
+  <list></list>
 </view>

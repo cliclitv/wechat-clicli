@@ -1,15 +1,15 @@
 <view class="slide-bar">
   <!-- 标题列表-->
-  <scroll-view scroll-x class="slide-bar-scroll">
-    <view 
-      class="slide-bar-scroll-item" 
-      wx:for="{{tabList}}" 
-      wx:key="{{item.id}}">
-      <view
-        class="{{currentTab == item.id ? 'on' : ''}}" 
-        bindtap="handleSelectTab" 
-        data-current="{{item.id}}">{{item.title}}</view>
-    </view>
+    <scroll-view scroll-x class="slide-bar-scroll">
+      <view 
+        class="slide-bar-scroll-item" 
+        wx:for="{{tabList}}" 
+        wx:key="{{item.id}}">
+        <view
+          class="{{currentTab == item.id ? 'on' : ''}}" 
+          bindtap="handleSelectTab" 
+          data-current="{{item.id}}">{{item.title}}</view>
+      </view>
   </scroll-view>
   <!--内容列表-->
   <!-- 
