@@ -11,3 +11,10 @@
 view,text {
   color: #17233d;
 }
+
+
+
+/* 功能类 */
+.fn-mt {
+  margin-top: 500rpx;
+}

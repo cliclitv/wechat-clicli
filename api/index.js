@@ -1,9 +1,15 @@
 import { request } from '../lib/request';
 
-export function apiGetWeekUpdate (obj) {
+const apiGetWeekUpdate = function apiGetWeekUpdate (obj) {
   return request({
     url: 'posts',
     method: 'GET',
     data: obj
   })
+}
+
+
+module.exports = {
+  apiGetWeekUpdate,
+  
 }

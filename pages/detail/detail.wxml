@@ -1,2 +1,33 @@
-<!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<view class="detail">
+  <video
+    id="myVideo"
+    src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"
+    danmu-list="{{danmuList}}"
+    enable-danmu
+    danmu-btn
+    controls
+    style="width:100vw;height:40vh;"
+    ></video>
+    <!-- 后续与前面tabs利用同一组件todo... -->
+    <view class="detail-tab fn-mt">
+      <text class="detail-tab-item" wx:for="{{2}}">标题</text>
+    </view>
+    <view class="detail-Pane">
+      <!-- 预留一个评论后续panetood。。 -->
+      <view class="detail-info">
+        <image class="detail-info-img"></image>
+        <view class="detail-info-right">
+          <view class="detail-info-right-title">黑色四叶草</view>
+          <view class="detail-info-right-see">
+            <image class="detail-info-right-see-icon"></image>
+            <text class="detail-info-right-see-count">3123</text>
+            <image class="detail-info-right-see-icon"></image>
+            <text class="detail-info-right-see-count">203</text>
+          </view>
+          <view class="detail-info-right-tag">新番 奇幻战斗</view>
+          <view class="detail-info-right-des">简介内容简介内容</view>
+        </view>
+      </view>
+      <view class="detail-count"></view>
+    </view>
+</view>
